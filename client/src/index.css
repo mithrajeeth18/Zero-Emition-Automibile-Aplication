@@ -1,0 +1,369 @@
+:root {
+    --darkBlue-color:#0B1A50;
+    --text-color:#ffffff;
+    --light-greay:#797272;
+    --Red-light:#d34d4d;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  #root{
+    height: 100%;
+    font-family: Comfortaa;
+  }
+  
+  
+.mainDiv,.mainDivCreateAcc,.home{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    height: 100%;
+    flex:1;
+}    
+.logoStyle{
+    height:75px;
+    width:216px;
+    margin-top:42%
+}
+.logoCreateAcc{
+  padding: 40px 18px 18px 18px;
+  width:300px;
+}
+.notification{
+  height: 25px;
+  width:25px;
+  color: var(--darkBlue-color);
+  margin-right: 5%;
+}
+.imgDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainHeader{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  background-color: var(--text-color);
+}
+.subBody{
+  background-color: var(--darkBlue-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  margin-top: 240px;
+  padding: 40px 10px;
+  gap:20px;
+  font-size: 22px;
+  width: 80%;
+}
+.finalList{
+    color: var(--darkBlue-color);
+      display: flex;
+      flex-direction: column;
+      padding: 26px 10px;
+      gap: 20px;
+      font-size: 22px;
+      width: 78%;
+      margin-bottom: 10%;
+}
+.subHeader{
+  background-color: var(--darkBlue-color);
+  padding: 4px 0px;
+  color: var(--text-color);
+  width: 100%;
+  height: 36px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Update{
+  color:var(--Red-light) ;
+  padding-left: -4px
+  ;
+}
+.mainBody{
+  margin-top:230px;
+  display: flex;
+  flex-direction: column;
+  gap:26px;
+  z-index: 11;
+}
+.buttonStyle{
+    height: 49px;
+    width: 216px;
+    background-color: var(--darkBlue-color);
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+.buttonAlignment{
+    display: flex;
+    gap:38px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 38%;
+}
+.inpuDivText{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 17px;
+    color: var(--darkBlue-color);
+    margin-top: 13px;
+    letter-spacing: 0.015em;
+}
+.inputDiv{
+  position:relative;
+}
+input{
+  display: block;
+  padding: 4px 10px;
+  border: 1px solid var(--light-greay) ;
+  height: 36px;
+  width: 264px;
+  border-radius: 0px;
+  font-size: 18px;
+   color:#0f0101eb;
+  
+}
+input:focus {
+  border: 1px solid #0f0101eb  }
+
+*:focus {
+      outline: none;
+    }
+ input[type="date"]::before {
+   content: attr(placeholder);
+   position: absolute;
+   color: rgba(0, 0, 0, 0);
+ }
+
+ input[type="date"] {
+   color: rgba(0, 0, 0, 1);
+ }
+.labelAnimation {
+  position: absolute;
+  font-weight: 600;
+  color: var(--light-greay);
+  left: 12px;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: text;
+  user-select: none;
+  transition: 0.15s ease-in-out;
+font-size: 20px;
+font-weight: 400;
+line-height: 17px;
+text-align: center;
+top:50%
+}
+.labelAfter{
+  color: black;
+  background-color: #ffffff;
+  top: -2%;
+  position: absolute;
+  font-weight: 600;
+  left: 12px;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: text;
+  user-select: none;
+  transition: 0.15s ease-in-out;
+font-size: 20px;
+line-height: 17px;
+text-align: center;
+}
+.showIcon{
+  height: 30px;
+  position: absolute;
+  top: 20%;
+  right: 4%;
+}
+.hideIcon{
+  height: 20px;
+    position: absolute;
+    top: 28%;
+    right: 4%;
+}
+.loginButtonAlignments{
+  display: flex;
+    gap: 26px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25%;
+}
+.line{
+  border: 1px solid var(--light-greay);
+  width:100%;
+  margin-top: 26px;
+}
+.text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+    color: var(--light-greay);
+    display: flex;
+}
+.errorText{
+  color: red;
+  position: absolute;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width:64%
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+    border: 1px solid var(--light-greay);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color:var(--darkBlue-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.marquee {
+  margin: 10px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 7s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 3.5s;
+}
+.containerPopup {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #5a5959 #f0f0f0;
+}
+
+.containerPopup::-webkit-scrollbar {
+  width: 8px;
+  margin: 2px;
+}
+
+.containerPopup::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.containerPopup::-webkit-scrollbar-thumb {
+  background-color: #5a5959;
+}
+
+.envelope::before {
+  content: 'X';
+  color: #fff;
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  font-size: 22px;
+  font-weight: 400;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mainDiv{
+    flex-direction: row;
+      justify-content: space-evenly;
+      margin: auto;
+      width:70%
+  }
+  .logoStyle{
+    margin-top: 0px;
+    height: 164px;
+    width: 334px;
+  }
+  .buttonAlignment,
+  .loginButtonAlignments{
+    margin-bottom:0px;
+  }
+  .border{
+    border: 1px solid #797272;
+    height:75%
+  }
+  .mainCreateAcc input{
+    width:450px
+  }
+}

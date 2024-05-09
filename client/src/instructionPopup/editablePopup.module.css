@@ -1,0 +1,65 @@
+.container {
+  display: none;
+  background-color: black;
+  opacity: 75%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.instruction-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sublist {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.show {
+  display: block;
+  -webkit-animation: overlayFadeIn 0.3s ease-in-out;
+  -moz-animation: overlayFadeIn 0.3s ease-in-out;
+  -o-animation: overlayFadeIn 0.3s ease-in-out;
+  animation: overlayFadeIn 0.3s ease-in-out;
+}
+
+.hide {
+  display: none;
+  -webkit-animation: overlayFadeOut 0.3s ease-in-out;
+  -moz-animation: overlayFadeOut 0.3s ease-in-out;
+  -o-animation: overlayFadeOut 0.3s ease-in-out;
+  animation: overlayFadeOut 0.3s ease-in-out;
+}
+
+.dialogContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  max-width: fit-content;
+  height: fit-content;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.crossIcon{
+  height: 25px;
+  width:25px;
+  color: #fff;
+}
+p{
+  margin: 0px;
+}
